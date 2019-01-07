@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tema 2</title>
+		<style>
+		*{
+			box-sizing:border-box;
+		}
+		html, body{
+			margin:0;
+			padding:0;
+		}
+		
+		#website{
+			max-width: 1024px;
+			margin: 0 auto;
+		}
+		
+		#header{
+			background-color: #bcda2d;
+			height: 160px;
+			border:1px solid lightgrey;
+			padding:30px;
+			margin-top:10px;
+		}
+		body{
+			background-color:#e0d38e;
+		}
+		.header-right{
+			max-width: 300px;
+			margin: 0 0 0 auto;
+		}
+		#site_title{
+			font-size:32px;
+			
+		}
+		#site_slogan{
+			margin-top:5px;
+			font-size:24px;
+			color:#4a4a4a;
+		}
+		#main{
+			margin-top:5px;
+			background-color:#f0e8c3;
+			
+		}
+		#navbar{
+			text-align: center;
+			background-color:#e9e6d0;
+			margin:10px;
+			padding:5px;
+		}
+		#navbar > button{
+			color: #293123;
+			background-color: transparent;
+			border: none;
+			padding: 8px;
+			width: 15%;
+			
+		}
+		#navbar > button:not(:last-child){
+			border-right:1px solid #c7c7c7;;
+		}
+		#left-side{
+			width:30%;
+			min-height:500px;
+			display:inline-block;
+			float:left;
+			border-right:1px solid #c7c7c7;
+			padding:10px 15px 10px 10px;
+		}
+		#right-side{
+			width:70%;
+			min-height:500px;
+			display:inline-block;
+			float:left;
+		}
+		.menu-header{
+			background-color:#d2d35e;
+			font-size:32px;
+			font-weight:bold;
+			padding:10px;
+		}
+		#left-side ul{
+			padding-left:8px;
+		}
+		#left-side li{
+			text-decoration: underline;
+			font-size: 20px;
+			list-style: none;
+			margin-bottom: 5px;
+		}
+		#left-side li:before{
+			content: '';
+			display: inline-block;
+			height: 12px;
+			width: 12px;
+			margin-right:5px;
+			background-image: url(https://cdn.iconscout.com/icon/premium/png-256-thumb/dots-19-447541.png);
+			background-size: 12px;
+		}
+        .menu-title{
+			font-size:32px;
+			font-weight:bold;
+            text-align: left;
+            padding: 10px;
+        }
+            *{
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.button-two {
+  background-color: #4CAF50;
+  border: none;
+  color: black;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: #293123
+  margin: 4px 2px;
+  cursor: pointer;
+		</style>
+	</head>
+	<body>
+		<div id="website">
+			<div id="header">
+				<div class="header-right">
+					<div id="site_title">Enter Site Title</div>
+					<div id="site_slogan">Enter Site Slogan</div>
+				</div>
+			</div>
+			<div id="main">
+				<div id="navbar">
+					<button>Home</button>
+					<button>New Page</button>
+					<button>New Page 2</button>
+					<button>New Page 3</button>
+					<button>New Page 4</button>
+					<button>New Page 5</button>
+				</div>
+				<div id="left-side">
+					<div class="menu-header">Main Menu</div>
+					<ul>
+						<li>Menu Item 1</li>
+						<li>Menu Item 2</li>
+						<li>Menu Item 3</li>
+						<li>Menu Item 4</li>
+						<li>Menu Item 5</li>
+						<li>Menu Item 6</li>
+						<li>Menu Item 7</li>
+						<li>Menu Item 8</li>
+					</ul>
+					
+					
+					<div class="menu-header">Block</div>
+					<div style="margin:10px;">
+						Enter block content here...
+					</div>
+					<div >
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a ty
+					</div>
+				</div>
+				<div id="right-side">
+                        <div class="menu-title">Gallery</div>
+                        <div style="margin:10px;">
+                                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32
+                        </div>
+                    
+                        <div class="row">
+                                <div class="column" >
+                                  <h2>Subscription</h2>
+                                  <p>A Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32</p>
+                                  <div>
+                                        <button class="button-two">Read more</button>
+                                </div>
+                                </div>                    
+                                
+                                <div class="column" >
+                                  <h2>Other Services</h2>
+                                  <p>Making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum.</p>
+                                  <div>
+                                        <button class="button-two">Read more</button>
+                                </div>
+                                </div>
+                              </div>
+                        
+                    
+
+                    </div>
+				</div>
+                
+				<br style="clear:both;"/>
+			</div>
+		</div>
+	</body>
+</html>
