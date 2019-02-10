@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Curs 9</title>
+<script>
+
+    /** Sortarea unei liste de numere
+    */
+    var arr=[10,5,2,7,20];
+    arr.sort(
+        function(a,b){
+            return b-a;
+
+    });
+    console.log(arr);
+
+    var persoane = [
+        {
+            nume:"Ana",
+            prenume:"Ion",
+            varsta:30
+        },
+        {
+            nume:"Vasile",
+            prenume:"Popescu",
+            varsta:10
+        }, {
+            nume:"Gigi",
+            prenume:"Kent",
+            varsta:19
+        }, {
+            nume:"Mara",
+            prenume:"Tralala",
+            varsta:50
+        },
+    ];
+    persoane.sort(function(a,b){
+        
+        if(a.nume.toUpperCase()>b.nume.toUpperCase){
+            return 1;
+        }else if(a["nume"]<b["nume"]){
+            return -1;
+        }
+        else{
+            return 0;
+        }
+    });
+        console.log(JSON.parse(JSON.stringify(persoane)));
+        persoane.sort(function(a,b){
+
+            return a.varsta-b.varsta;
+        });
+        console.log(persoane);
+
+ /**
+FizzBuzz game facut "de mine"
+*/
+       
+        for (var i=0; i <= 60; i++){
+    if (i % 15 === 0) console.log("fizz buzz");
+    else if (i % 3 === 0) console.log("fizz");
+    else if (i % 5 === 0) console.log("buzz");
+    else console.log(i);
+
+}
+    
+/**
+       FizzBuzz game facut prof
+*/
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

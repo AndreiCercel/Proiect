@@ -1,0 +1,91 @@
+<html>
+<head>
+	<script>
+		function isDigits(str){
+			for(var i=0;i<str.length;i++){
+				if(str[i]<"0" ||str[i]>"9"){
+					return false;
+				}
+			}
+			return true;
+		}
+		function valideaza(elem,event){
+			var numeEl = document.querySelector('[name="nume"]');
+			var prenumeEl = document.querySelector('[name="prenume"]');
+			var varstaEl = document.querySelector('[name="varsta"]');
+			var telefonEl = document.querySelector('[name="telefon"]');
+		
+			var nume = numeEl.value;
+			var prenume = prenumeEl.value;
+			var varsta = varstaEl.value;
+			var telefon = telefonEl.value;
+			
+			if(nume.length<3){
+				numeEl.classList.add("invalid");
+				event.preventDefault();
+			}else{
+				numeEl.classList.remove("invalid");
+			}
+			if(prenume.length<3){
+				prenumeEl.classList.add("invalid");
+				event.preventDefault();
+			}else{
+				prenumeEl.classList.remove("invalid");
+			}
+			if(isNaN(Number(varsta)) || Number(varsta)<18 || Number(varsta)>80){
+				varstaEl.classList.add("invalid");
+				event.preventDefault();
+			}else{
+				varstaEl.classList.remove("invalid");
+			}
+			if(telefon.length!==10 || telefon.indexOf("07")!==0 || !isDigits(telefon)){
+				telefonEl.classList.add("invalid");
+				event.preventDefault();
+			}else{
+				telefonEl.classList.remove("invalid");
+			}
+		}
+		function noDigits(elem,event){
+			if(event.key>="0" && event.key<="9"){
+				event.preventDefault();
+			}
+		}
+	</script>
+	<style>
+		.hidden{
+			display:none;
+		}
+		.invalid{
+			border-color:red;
+		}
+	</style>
+</head>
+<body>
+	<form onsubmit="valideaza(this,event);">
+		<fieldset>
+			<legend>Client nou</legend>
+			<div>
+				<label>
+					<span>Nume: </span>
+					<input type="text" name="nume" onkeydown="noDigits(this,event);" />
+				</label>
+			</div>
+			<div>
+				<label for="prenume">Prenume: </label>
+				<input id="prenume" type="text" name="prenume" onkeydown="noDigits(this,event);" />
+			</div>
+			<div>
+				<label for="varsta">Varsta: </label>
+				<input id="varsta" type="text" name="varsta" />
+			</div>
+			<div>
+				<label for="telefon">Telefon: </label>
+				<input id="telefon" type="text" name="telefon"/>
+			</div>
+			<input type="submit" />
+		</fieldset>
+		
+	</form>
+	
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+<head>
+	<style>
+		.page:not(.active-page){
+			display:none;
+		}
+		.active-tab{
+			background-color:yellow;
+		}
+		#tabs > button {
+			min-width:50px;
+		}
+	</style>
+	<script>
+		function changeTab(idx){
+			var btn = document.querySelector("button.active-tab");
+			if(btn!==null){
+				btn.classList.remove("active-tab");
+			}
+			var btnList = document.querySelectorAll("#tabs>button");
+			btnList[idx].classList.add("active-tab");
+			
+			var page = document.querySelector(".page.active-page");
+			if(page!==null){
+				page.classList.remove("active-page");
+			}
+			var pageList = document.querySelectorAll("#pages>.page");
+			pageList[idx].classList.add("active-page");
+		}
+	</script>
+</head>
+<body>
+	<div id="tabs">
+		<button onclick="changeTab(0)">1</button>
+		<button class="active-tab" onclick="changeTab(1)">2</button>
+		<button onclick="changeTab(2)">3</button>
+		<button onclick="changeTab(3)">4</button>
+	</div>
+	<div id="pages">
+		<div class="page">Continut 1</div>
+		<div class="page active-page">Continut 2</div>
+		<div class="page">Continut 3</div>
+		<div class="page">Continut 4</div>
+	</div>
+
+</body>
+</html>

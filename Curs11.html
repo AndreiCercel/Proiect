@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#success,#error{
+			
+		}
+		.hidden{
+			display:none;
+		}
+		#success:not(.hidden){
+			color:green;
+		}
+		#error:not(.hidden){
+			color:red;
+		}
+	</style>
+	<script>
+		var a;
+		var b;
+		var rezultateCorecte = 0;
+		var rezultateGresite = 0;
+		var stare = "corect";
+		var nrGresite = 0;
+		function newGame(){
+			if(stare==="corect" || nrGresite>=3){
+				stare="new game";
+				nrGresite = 0;
+				a = Math.floor(Math.random()*10);
+				b = Math.floor(Math.random()*10);
+				console.log(a,b);
+				document.getElementById("x").innerHTML=a;
+				document.getElementById("y").innerHTML=b;
+				
+				document.getElementById("success").classList.add("hidden");
+				document.getElementById("error").classList.add("hidden");
+				document.querySelector("#result").value="";
+			}else{
+				alert("trebuie sa gasesti raspunsul corect");
+			}
+		}
+		function verifica(){
+			var rezultat = document.querySelector("#result").value;
+			var numar = Number(rezultat);
+			console.log(numar);
+			if(numar===a*b){
+				document.getElementById("success").classList.remove("hidden");
+				document.getElementById("error").classList.add("hidden");
+				rezultateCorecte++;
+				stare="corect";
+			}else{
+				document.getElementById("success").classList.add("hidden");
+				document.getElementById("error").classList.remove("hidden");
+				rezultateGresite++;
+				stare="gresit";
+				nrGresite++;
+			}
+			document.querySelector("#rezultateCorecte").innerHTML=rezultateCorecte;
+			document.querySelector("#rezultateGresite").innerHTML=rezultateGresite;
+		}
+		
+		function enter(event){
+			if (event.keyCode === 13) {
+				verifica();
+			}
+		}
+	</script>
+</head>
+<body onload="newGame();">
+	<button onclick="newGame();">New Game</button>
+	<div>
+		<span id="rezultateCorecte"></span>
+		<span id="rezultateGresite"></span>
+	</div>
+	<div>
+		<span>Cat fac: </span><span id="x"></span> * <span id="y"></span><span>?</span>
+		<input id="result" 
+			type="text" 
+			style="width:50px;" 
+			onkeypress="enter(event)"/>
+		<button onclick="verifica();">Gata</button>
+	</div>
+	<p id="success" class="hidden">Bravo ai ghicit !</p>
+	<p id="error" class="hidden">Mai incearca !</p>
+	
+</body>
+</html>

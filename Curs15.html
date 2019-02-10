@@ -1,0 +1,141 @@
+html>
+<head>
+	<style>
+		img{
+			width:100px;
+			height:100px;
+		}
+		table{
+			border-collapse:collapse;
+		}
+	</style>
+	<script>
+		var xImg = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/White_x_in_red_rounded_square.svg/2000px-White_x_in_red_rounded_square.svg.png";
+		var oImg = "https://www.pngarts.com/files/1/Zero-Number-Transparent-Image.png";
+		var blankImg = "https://i.ytimg.com/vi/eq7Adzo4QAE/maxresdefault.jpg";
+		var player = true;
+		var xWons = 0;
+		var oWons = 0;
+		var games = 0;
+		var gameFinished=false;
+		
+		function changeImg(img){
+			if(gameFinished){
+				return;
+			}
+			if(img.getAttribute("src")===blankImg){
+				if(player){
+					img.setAttribute("src",xImg);
+				}else{
+					img.setAttribute("src",oImg);
+				}
+				player=!player;
+				document.querySelector("#turn").innerText=player?"X":"0";
+			}
+			var imgs = document.querySelectorAll("img");
+			console.log(imgs,xImg,hasWon(imgs,xImg));
+			if(hasWon(imgs,xImg)){
+				xWons++;
+				games++;
+				gameFinished=true;
+				document.querySelector("#xWons").innerText=xWons;
+			}else if (hasWon(imgs,oImg)){
+				oWons++;
+				games++;
+				gameFinished=true;
+				document.querySelector("#oWons").innerText=oWons;
+			} else if(isDraw(imgs,blankImg)){
+				gameFinished=true;
+				games++;
+			}
+		}
+		function isDraw(imgs,img){
+			for(var i=0;i<imgs.length;i++){
+				if(imgs[i].getAttribute("src")===img){
+					return false;
+				}
+			}
+			return true;
+		}
+		function hasWon(imgs, img){
+			for(var x=0;x<3;x++){
+				if(imgs[x*3].getAttribute("src")===img && 
+						imgs[x*3+1].getAttribute("src")===img && 
+						imgs[x*3+2].getAttribute("src")===img){
+					return true;
+				}
+				if(imgs[x].getAttribute("src")===img && 
+						imgs[3+x].getAttribute("src")===img && 
+						imgs[6+x].getAttribute("src")===img){
+					return true;
+				}
+			}
+			if(imgs[0].getAttribute("src")===img && 
+					imgs[4].getAttribute("src")===img && 
+					imgs[8].getAttribute("src")===img){
+				return true;
+			}
+			if(imgs[2].getAttribute("src")===img && 
+					imgs[4].getAttribute("src")===img && 
+					imgs[6].getAttribute("src")===img){
+				return true;
+			}
+			return false;
+		}
+		function newGame(){
+			if(!gameFinished){
+				return;
+			}
+			gameFinished=false;
+			var imgs = document.querySelectorAll("img");
+			for(var i=0;i<imgs.length;i++){
+				imgs[i].setAttribute("src",blankImg);
+			}
+			player=games%2===0;
+			document.querySelector("#turn").innerText=player?"X":"0";
+		}
+	</script>
+</head>
+<body>
+	<div style="display:flex;">
+		<div style="flex:2">
+			<table border="1">
+				<tr>
+					<td><img onclick="changeImg(this);" src="https://i.ytimg.com/vi/eq7Adzo4QAE/maxresdefault.jpg" /></td>
+					<td><img onclick="changeImg(this);" src="https://i.ytimg.com/vi/eq7Adzo4QAE/maxresdefault.jpg" /></td>
+					<td><img onclick="changeImg(this);" src="https://i.ytimg.com/vi/eq7Adzo4QAE/maxresdefault.jpg" /></td>
+				</tr>
+				<tr>
+					<td><img onclick="changeImg(this);" src="https://i.ytimg.com/vi/eq7Adzo4QAE/maxresdefault.jpg" /></td>
+					<td><img onclick="changeImg(this);" src="https://i.ytimg.com/vi/eq7Adzo4QAE/maxresdefault.jpg" /></td>
+					<td><img onclick="changeImg(this);" src="https://i.ytimg.com/vi/eq7Adzo4QAE/maxresdefault.jpg" /></td>
+				</tr>
+				<tr>
+					<td><img onclick="changeImg(this);" src="https://i.ytimg.com/vi/eq7Adzo4QAE/maxresdefault.jpg" /></td>
+					<td><img onclick="changeImg(this);" src="https://i.ytimg.com/vi/eq7Adzo4QAE/maxresdefault.jpg" /></td>
+					<td><img onclick="changeImg(this);" src="https://i.ytimg.com/vi/eq7Adzo4QAE/maxresdefault.jpg" /></td>
+				</tr>
+			</table>
+			<input type="button" value="New Game" onclick="newGame();"/>
+		</div>
+		<div style="flex:1">
+			<table border="1">
+				<tr>
+					<td colspan="2">Score Board</td>
+				</tr>
+				<tr>
+					<td colspan="2">Turn: <span id="turn">X</span></td>
+				</tr>
+				<tr>
+					<td>X</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td id="xWons">0</td>
+					<td id="oWons">0</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
