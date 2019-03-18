@@ -1,0 +1,232 @@
+<html>
+    <head>
+        <script>
+            /*
+             1. O functie care compara 2 valori si returneaza true daca sunt egale si false daca nu sunt egale
+            */
+
+            function equals(a,b) {
+                if (a === b) {
+                    return true;
+
+                } else {
+                    return false;
+
+                }
+            }
+            console.log (equals(1,1));
+            console.log (equals(1,13));
+            console.log (equals(2,1));
+            console.log (equals("a","a"));
+
+            /*
+            2. O functie care compara 2 valori si returneaza -1 daca primul e mai mic ca al doilea, 0 daca sunt egale si 1 daca primul e mai mare ca al doilea
+            */
+
+            function comparatie(a,b){
+                if (a > b){
+                    return 1;
+                    } else if (a < b){
+                    return -1;
+                    } else {
+                    return 0;
+                }
+            }
+            console.log(comparatie(1,2));
+            console.log(comparatie(2,2));
+            console.log(comparatie(2,1));
+
+            /*
+            3. O functie care primeste 2 valori si returneaza maximul dintre cele 2
+            */
+
+            function maximumNumar (a,b){
+                return Math.max(a,b);
+            }
+            console.log(Math.max(3,4));
+            console.log(Math.max(665,666));
+
+            /*
+            4. O functie care primeste 2 valori si returneaza minimul dintre cele 2
+            */
+    
+            function maximumNumar (a,b){
+                return Math.min(a,b);
+            }
+            console.log(Math.min(3,4));
+            console.log(Math.min(665,666));
+
+
+            /*
+            5. O functie care intoarce suma primelor N numere naturale pozitive
+            */
+
+            function suma(a){
+                var sum = 0;
+                for(var i = 1; i <= a; i++) {
+                sum = sum + i;
+                } return sum;
+            }
+            console.log(suma(6));
+            console.log(suma(13));
+
+            /*
+            6. O functie care verifica daca N este numar prim (restul impartirii la 1 si la N ==0)
+            */
+            function numarPrim(n) {
+                for(var i = 2; i < n; i++) {
+                    if (n % i === 0) {
+                        return "Nu este numar prim";
+                } else {
+                    return "Este numar prim";
+                }
+
+                }
+            }
+            console.log(numarPrim (6));
+            console.log(numarPrim (13));
+            console.log(numarPrim (15));
+
+            /*
+            7. O functie care intoarce suma primelor N numere prime
+            */
+            function sumaNumarPrim(n) {
+                var suma = 0;
+                for (var a = 1; a <= n; a++) {
+                    for (var b = 2; b < a; b++){
+                        if (a === 0) {
+                            return suma = suma; }
+                    }
+                }   if (suma = suma + a){ 
+                        return suma;
+                    }
+            }
+            console.log(sumaNumarPrim(11));
+    
+            /*
+            8. O functie care primeste un parametru de tip string si intoarce inversul acestuia (abc => cba)
+            */
+            function reverseString(str){
+                var newString = "";
+                for (var i = str.length - 1; i >= 0; i--){
+                newString = newString + str[i]
+             
+                }return newString;
+            }
+            console.log(reverseString('Hai ca mi-a iesit pana la urma!'));
+
+            /*
+            9. O functie care intoarce produsul primelor N numere impare pozitive
+            */
+            function produsNrPozitive(x) {
+		        var sum = 0;
+		        for( var i = 0; i <= x; i++) {
+			        if(i % 2 === 0) {
+				        sum = sum;
+			    } else {
+				sum = sum + i;
+			    }
+		        } return sum;
+	        }
+            console.log(produsNrPozitive(5));
+     
+     
+            /*
+            10. O functie care primeste 2 parametri(arr - array de nr intregi si x - numar) si verifica daca x exista in array
+            */
+            function doiParametri (arr, x) {
+                for (var i = 0; i <= arr.length; i++) {
+                    if (x === arr[i]){
+                return x + ' se afla in array';
+                } 
+                } return x + ' nu se afla in array';
+            }
+            console.log(doiParametri([1, 2, 3, 4, 5, 144], 144));
+            console.log(doiParametri([1, 2, 3, 4, 5, 144], 13));
+     
+            /*
+            11. O functie care intoarce maximul dintr-un array primit ca parametru
+            */
+            function maximFromArray(array){
+                var max = array[0];
+                for (var i=0; i<array.length; i++) {
+                    if (max<array[i]){
+                        max=array[i];
+                } 
+            }
+                return max;
+            }
+            console.log(maximFromArray([10222,4,19,18]));
+    
+            /*
+            12.  O functie care intoarce suma dintre max si min, dintr-un array primit ca parametru
+            */
+            function sumaMinMax(arr) {
+		        var min = arr[1];
+		        var max = 0;
+		
+		        for (var i =0; i<=arr.length;i++) {
+		        	if (max < arr[i]) {
+		        		max= arr[i];
+		    	    }
+		        }
+
+                for (var j=0;j<=arr.length; j++) {
+                    if(min>=arr[j]) {
+                        min = arr[j];
+                    }
+                }
+		        return max+min;
+	        }
+            console.log(sumaMinMax([320,4,2,21]));
+
+            /*
+            13.  O functie care verifica daca exista duplicate intr-un array primit ca parametru
+            */
+            
+            function dup(arr) {
+    		    for(let i = 0; i < arr.length; i++){
+    			    for(let j = i + 1; j < arr.length; j++){
+    				    if(arr[i] === arr[j]){
+    					    return "exista duplicate";
+    				    }
+    			    }
+    		    }
+    		    return "nu exista duplicate";
+    	    }
+            console.log(dup([2, 14, 1]));
+            console.log(dup([2, 14, 2]));
+
+            /*
+            14.  O functie care intoarce produsul numerelor pozitive intr-un array primit ca parametru
+            */
+
+            function pozM(arr){
+    		    var prod = 1;
+    		        for(let i = 0; i < arr.length; i++){
+    			        if(arr[i] > 0){
+    			        	prod *= arr[i];
+    			        }
+    		        }
+    		        return prod;
+    	    } console.log(pozM([4,1,2,6]));
+
+            /*
+            15.  O functie care verifica daca un string primit ca parametru este palindrom (inversul == originalul, ex: abcba == abcba, abca != acba
+            */
+
+            function palindrom(str) {
+    		    for(let i = 0; i < str.length / 2; i++) {
+    			    if(str[i] !== str[str.length - i - 1]){
+    			    	return "Ghinion, " + str + " nu este palindrom";
+    			    }
+    		    }
+    		    return str + " este palindrom :)";
+    	    }
+            console.log(palindrom('caiac'));
+            console.log(palindrom('queen'));
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
