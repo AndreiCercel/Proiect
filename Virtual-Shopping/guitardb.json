@@ -1,0 +1,112 @@
+{
+	"produse":{
+		"0":{
+			"nume":"Fender David Gilmour NOS",
+			"imagine":"images/guitar1.jpg",
+			"detaliu": "images/guitar1-d.jpg",
+			"pret":4444,
+			"descriere":"The Fender Custom Shop worked closely with Gilmour and his longtime guitar technician, Phil Taylor, to create his signature model, a reproduction of the Black Strat complete with its unmistakable look, sound and feel. Featuring a black nitrocellulose lacquer finish, alder body with black pickguard, one-piece maple neck, custom pickups, and Gilmour’s own distinctive electronics and shortened vintage tremolo arm, the David Gilmour Signature Series Stratocaster is as beautiful, powerful and individual as Gilmour’s playing.",
+			"stoc":666
+		},
+		"1":{
+			"nume":"Schecter Hellraiser C1 FR S BCH",
+			"imagine":"images/guitar2.jpg",
+			"detaliu": "images/guitar2-d.jpg",
+			"pret":1111,
+			"descriere":"Add a true metal guitar to your collection with the Schecter Hellraiser C-1 FR-S solidbody electric guitar! This Hellraiser gives you a mahogany body, a quilt maple top, a thin mahogany neck, and a rosewood fretboard that deliver hard-hitting lows and a soaring top end. What's more, Schecter gave the Hellraiser C-1 FR-S an ultra-cool Sustainiac neck pickup, which lets you pull off flying solos like nothing else out there. Add this to an EMG 81 humbucker and a Floyd Rose tremolo and you have one mean metal machine.",
+			"stoc":13
+		},
+		"2":{
+			"nume":"Fender AM Elite Strat MN 3TSB",
+			"imagine":"images/guitar3.jpg",
+			"detaliu": "images/guitar3-d.jpg",
+			"pret":1733,
+			"descriere":"Over a dozen new innovations, such as 4th-generation noiseless pickups and high-mass, full-sustain saddles, conspire to make the American Elite Stratocaster one of the best modern Strats for the money. The classic tone cocktail of an alder body and maple neck provides the same punch, bite, and twang that helped build Fender's empire, but the expanded 10-way S-1 pickup switching system and comfortable compound-radius neck will give even veteran Strat players reason to upgrade. Fender's tremolo system is also better than ever on the American Elite, with a smoother response and a copper-infused bridge plate to help fight tuning slippage. ",
+			"stoc":27
+		},
+        "3":{
+			"nume":"Fender AM Pro Strat Ash MN SSB",
+			"imagine":"images/guitar4.jpg",
+			"detaliu": "images/guitar4-d.jpg",
+			"pret":1499,
+			"descriere":"The American standard series has been the embodiment of the Fender Allround workhorse since the 80s. She has received a worthy successor with the American Pro Stratocaster RW SSB. Compared to the predecessor, the following detailed improvements have been made: the tremolo arm is pluggable and can be adjusted in its friction. It has a SSS set of Tim Shaw designed pickups - 3 special V-Mod single coils for the characteristic sound. The single coils are a new development: the output is noticeably increased, but without losing the classic, pearly Fender single coil sound. The neck has a modern Deep-C profile and is equipped with 22 Narrow Tall frets, which allow easy playing. A treble bleed circuit is also included on the volume potentiometer so that the treble level is maintained when the volume is adjusted downwards.  ",
+			"stoc":37
+		},
+        "4":{
+			"nume":"Ibanez RG652AHM-NGB Prestige",
+			"imagine":"images/guitar5.jpg",
+			"detaliu": "images/guitar5-d.jpg",
+			"pret":1466,
+			"descriere":"The Ibanez RG652AHM Prestige solidbody electric guitar was created to be a supremely playable, great-sounding guitar. The ash RG body gives the guitar a strong treble response, and it's decked out in a sharp Nebula Green Burst transparent finish. You'll love the feel of the fast, 5-piece maple/walnut Super Wizard HP neck. The RG652AHM Prestige uses DiMarzio Tone Zone and Air Norton humbuckers to push your amp for crunchy rhythms or hot leads. Get your hands on this RG652AHM Prestige and find out how far it can take your playing.",
+			"stoc":35
+		},
+        "5":{
+			"nume":"ESP LTD MH-1000 Evertune FM STBLK",
+			"imagine":"images/guitar6.jpg",
+			"detaliu": "images/guitar6-d.jpg",
+			"pret":1066,
+			"descriere":"As part of the LTD Deluxe Series designed for professional musicians, the LTD MH-1000 EverTune gives you more than you bargained for. It offers set-thru construction, meaning the neck extends deeply into the guitar's body cavity, offering unparalleled access to the upper frets with a smooth heel joint. It has a mahogany body with a flamed maple top in a See Thru Black finish, highlighting the great look of the figured wood grain. It also features a three-piece thin U-shaped maple neck, and an ebony fingerboard with 24 extra-jumbo frets. High-class touches are included, like its multiple white binding and Grover tuners. But the MH-1000 EverTune takes things a step further with the inclusion of active EMG 85 (neck) and EMG 81 (bridge) pickup for tones that range from dark and menacing through screaming and aggressive.",
+			"stoc":25
+		},
+        "6":{
+			"nume":"ESP E-II FRX FM RDB",
+			"imagine":"images/guitar7.jpg",
+			"detaliu": "images/guitar7-d.jpg",
+			"pret":2222,
+			"descriere":"The ESP E-II FRX is a very bold design that is made in our Japan-based factory, like all E-II models. The E-II FRX combines curves, points, and bevels to create a totally unique guitar shape that will stand out from all the others. This guitar offers set-thru construction, with the three-piece maple neck extending into the body to create a super smooth heel for fast access to the highest frets. The E-II FRX offers a mahogany body with flamed maple top, a comfortable thin-U neck shape, and an ebony fingerboard with 24 extra-jumbo frets. High-quality components on the E-II FRX include a Schaller straplock, Gotoh locking tuners, and a Floyd Rose Original bridge. Its sound is powered by a set of amazing active pickups: EMG 89R (neck) and EMG 89 (bridge). Available in ESP's exclusive Reindeer Blue finish. Includes hardshell case.",
+			"stoc":15
+		},
+        "7":{
+			"nume":"ESP E-II Arrow BLK Edition",
+			"imagine":"images/guitar8.jpg",
+			"detaliu": "images/guitar8-d.jpg",
+			"pret":2077,
+			"descriere":"Completely unique in its bold design, the ESP E-II ARROW is a guitar designed for pure high performance that will stand out from the crowd. Like all ESP E-II models, the Arrow is made in Japan at our ESP factory. Offering neck-thru-body construction, the E-II Arrow offers a sound as powerful and aggressive as its looks, with a set of EMG 85 (neck) and EMG 81 (bridge) active pickups. It has a light alder body with a three-piece thin U-shaped maple neck, and an ebony fingerboard with 24 extra-jumbo frets. High-quality components on the E-II Arrow include Schaller straplocks, Gotoh locking tuners, and a Floyd Rose Original bridge. Available in Black finish. Includes hardshell case.",
+			"stoc":31
+		},
+        "8":{
+			"nume":"Jackson Pro KV King V Ferrari Red",
+			"imagine":"images/guitar9.jpg",
+			"detaliu": "images/guitar9-d.jpg",
+			"pret":999,
+			"descriere":"The Jackson Pro Series King V solidbody electric guitar is primed for modern hard rock and metal. The guitar’s fast-playing maple neck boasts a compound-radius ebony fingerboard that enhances comfort and speed. A beveled mahogany body offers up thick, crunchy sound with plenty of bite. The classic pairing of Seymour Duncan’s JB and ’59 humbuckers pushes plenty of punishing power through your rig. You’ll also appreciate the Pro Series King V’s ultra-stable Floyd Rose tremolo. Create your own tonal fireworks with the Jackson Pro Series King V.",
+			"stoc":7
+		},
+        "9":{
+			"nume":"Dean Guitars Michael Batio MAB1 SOL",
+			"imagine":"images/guitar10.jpg",
+			"detaliu": "images/guitar10-d.jpg",
+			"pret":3390,
+			"descriere":"The Dean Michael Angelo Batio Speed of Light Electric Guitar is spec'd by Batio to be an incredibly fast guitar. Its neck is super thin, slightly rounded for extra comfort and joins the body at a straight angle for extended playability. It has an ebony fingerboard and block inlays that are easy to spot on stage.",
+			"stoc":100
+		},
+        "10":{
+			"nume":"Ibanez Paul Stanley PS1CM",
+			"imagine":"images/guitar11.jpg",
+			"detaliu": "images/guitar11-d.jpg",
+			"pret":6222,
+			"descriere":"The most striking visual feature of the PS1CM is the cracked acrylic mirror top which mimics an earlier Paul Stanley custom model. It is the first model since Stanley's most recent return to Ibanez in 2015 to belong to the upscale Prestige line, along with its sister model the PS10 which lacks only the cracked mirror top. It features the iconic Ibanez Iceman body style.",
+			"stoc":64
+		},
+        "11":{
+			"nume":"Music Man Petrucci Majesty BFR Marine",
+			"imagine":"images/guitar12.jpg",
+			"detaliu": "images/guitar12-d.jpg",
+			"pret":4444,
+			"descriere":"A resonant African mahogany body provides the core of its sound, which extends seamlessly into its Honduran mahogany neck with never-ending sustain. Harness an endless array of tones by way of two DiMarzio humbuckers, an active preamp, and an internal piezo system. Enjoy effortless playability thanks to a comfortable neck and slippery ebony fingerboard. Those in search of a versatile instrument won't be left wanting by this feature-packed instrument. Hand-signed by John Petrucci himself, this limited-run BFR instrument features an exclusive marine blue sparkle finish.",
+			"stoc":100
+		}
+		
+
+
+
+	},
+	"cos":{
+		"asd":{
+			"nume":"",
+			"imagine":"",
+			"pret":"",
+			"cantitate":""
+		}
+	}
+}
