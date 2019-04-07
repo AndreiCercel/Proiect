@@ -185,11 +185,9 @@ svg:active {
     width:100%
   }
   
-  .detalii {
-    margin-right: 20px;
+  .container {
+    width:100%;
   }
-  
-  
   
   }
   @media only screen and (max-width: 320px) {
@@ -203,10 +201,9 @@ svg:active {
     .logo-container {
       width:100%
     }
-    .detalii {
-      margin-right: 20px;
+    .container {
+      width:100%;
     }
-    
     
     
     }
