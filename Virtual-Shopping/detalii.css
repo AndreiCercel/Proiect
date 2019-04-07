@@ -117,7 +117,8 @@ a.btn,.btn {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 100%;
+  
+  
  
 }
 .imagine {
@@ -180,7 +181,8 @@ svg:active {
   .logo-container {
     width:100%
   }
-  .detalii {
+  
+  .imagine {
     width: 100%;
   }
   
@@ -197,10 +199,10 @@ svg:active {
     .logo-container {
       width:100%
     }
-    .detalii {
+    
+    .imagine {
       width: 100%;
     }
-    
     
     
     }
