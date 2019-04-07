@@ -16,38 +16,13 @@
   margin: 10px;
   align-items: center;
 }
-.container{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-input::-moz-focus-inner,
-button::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-input[type="submit"].btn,
-button.btn {
-  cursor: pointer;
-}
 
 a.btn,.btn {
   
   display: inline-block;
-  outline: none;
-  *zoom: 1;
-  text-align: center;
   text-decoration: none;
-  font-family: inherit;
-  font-weight: 300;
-  letter-spacing: 1px;
-  vertical-align: middle;
   border: 1px solid;
   transition: all 0.2s ease;
-  box-sizing: border-box;
-  text-shadow: 0 1px 0 rgba(0,0,0,0.01);
   font-family: 'verdana';
 }
 
@@ -110,8 +85,14 @@ a.btn,.btn {
   background: rgb(40, 107, 23);
 }
 
-.buttons, #buttons2 {
+.buttons, .buttons2 {
   margin: 0 5px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .detalii {
