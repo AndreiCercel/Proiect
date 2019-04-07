@@ -182,7 +182,11 @@ svg:active {
   .logo-container {
     width:100%
   }
-  
+  .imagine {
+    align-items: center;
+    justify-content: center;
+    width: 100%
+  }
   .detalii {
     width: 100%;
   }
@@ -199,6 +203,11 @@ svg:active {
     }
     .logo-container {
       width:100%
+    }
+    .imagine {
+      align-items: center;
+      justify-content: center;
+      width: 100%
     }
     
     .detalii {
