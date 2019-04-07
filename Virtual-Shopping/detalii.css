@@ -185,7 +185,9 @@ svg:active {
   .detalii {
     width: 100%;
   }
-  
+  .detaliu {
+    width: 50%;
+  }
   
   }
   @media only screen and (max-width: 320px) {
@@ -201,6 +203,9 @@ svg:active {
     }
     .detalii {
       width: 100%;
+    }
+    .detaliu {
+      width: 50%;
     }
     
     
