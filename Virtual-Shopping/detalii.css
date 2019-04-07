@@ -183,14 +183,8 @@ svg:active {
     width:100%
   }
   
-  .detalii {
-    
-    display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-    
-  }
+  
+  
   
   
   }
@@ -206,14 +200,6 @@ svg:active {
       width:100%
     }
     
-    .detalii {
-      
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      
-    }
     
     
     }
