@@ -170,12 +170,35 @@ svg:active {
   fill: rgb(40, 107, 23);
 }
 
-/*/@media only screen and (max-width: 768px) {
-  /* .produs {
-    width: 90%;
-  } */
-
-  /*#header {
-    display: block;*/
+@media only screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%
   }
-}
+  .logo-container {
+    width:100%
+  }
+  .detalii {
+    width: 100%;
+  }
+  
+  }
+  @media only screen and (max-width: 320px) {
+    .header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      width: 100%
+    }
+    .logo-container {
+      width:100%
+    }
+    .detalii {
+      width: 100%;
+    }
+    
+    }
