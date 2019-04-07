@@ -6,7 +6,7 @@ let id = window.location.search.split(/=/g)[1];
 					document.querySelector(".detaliu").src= produse.detaliu;
                                         document.querySelector(".descriere").innerHTML= produse.descriere;
                                         document.querySelector(".nume").innerHTML= produse.nume;
-                                        document.querySelector(".pret").innerHTML= produse.pret + "€";
+                                        document.querySelector(".pret").innerHTML= produse.pret;
               })
 /*let id = window.location.search.split(/=/g)[1];
 let url = `https://restaurant-menu-v1.firebaseio.com/menu/${id}.json`;

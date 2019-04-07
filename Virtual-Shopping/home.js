@@ -18,10 +18,10 @@ function draw(){
                 <img src="${lista.produse[i].imagine}" alt="Guitar" height="175px">
             </div>
             <div id="nume">
-                <p>${lista.produse[i].nume}</p>
+                ${lista.produse[i].nume}
             </div>
             <div id="pret">
-                <p>${lista.produse[i].pret}€</p>
+                ${lista.produse[i].pret}€
             </div>
             
             <div id="detalii">

@@ -1,8 +1,6 @@
-body{
-    background-color: rgb(255, 255, 255);
-}
 
-#header {
+
+.header {
  display: flex;
  justify-content: space-between;
 }
@@ -19,32 +17,12 @@ body{
   align-items: center;
 }
 
-input::-moz-focus-inner,
-button::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-input[type="submit"].btn,
-button.btn {
-  cursor: pointer;
-}
-
 a.btn,.btn {
   
   display: inline-block;
-  outline: none;
-  *zoom: 1;
-  text-align: center;
   text-decoration: none;
-  font-family: inherit;
-  font-weight: 300;
-  letter-spacing: 1px;
-  vertical-align: middle;
   border: 1px solid;
   transition: all 0.2s ease;
-  box-sizing: border-box;
-  text-shadow: 0 1px 0 rgba(0,0,0,0.01);
   font-family: 'verdana';
 }
 
@@ -120,15 +98,16 @@ a.btn,.btn {
 .produs{
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-  background-color: white;
+  
   padding: 10px; 
-  width: 241px;
-  height: 171px;
+  width: 240px;
+  height: 170px;
   margin:20px;
   margin-top: 30px;
-  font-size: 29px;
+  font-size: 30px;
   font-family: 'verdana';
   text-align: center;
+  
 }
 
 .produs:hover {
@@ -141,15 +120,17 @@ a.btn,.btn {
 }
 
 #nume{
+  height: 100px;
   text-align: center;
   font-size: 17px;
-  font-family: 'verdana';
 }
-
+#pret {
+  
+}
 #detalii{
+  display: inline-block;
   font-size: 13px;
-  margin-top: -6px;
-  margin-left: 60px;
+  margin: 2px;
   font-family: 'verdana';
 }
 
@@ -171,12 +152,12 @@ a.btn,.btn {
   fill: rgb(40, 107, 23);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 645px) {
   /* .produs {
     width: 90%;
   } */
 
-  #header {
+  .header {
     display: block;
   }
 }

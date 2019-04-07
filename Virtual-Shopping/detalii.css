@@ -1,14 +1,13 @@
-body{
-    background-color: rgb(255, 255, 255);
-}
+
 
 .header {
  display: flex;
  justify-content: space-between;
+ flex-wrap: wrap;
 }
 
 .logo-container {
-    display: block;
+    
     margin-left: 10px;
 }
 
@@ -115,77 +114,59 @@ a.btn,.btn {
 .detalii {
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-  background-color: white;
-  height:300px;
-  padding: 10px; 
+  padding: 15px; 
   margin: 10px;
-  justify-content: left;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  position: relative;
+ 
 }
 .imagine {
-  width: 100%;
-}
-.texts {
-  display: inline-block;
-  position: absolute;
-  margin-left: 450px;
-  float: right;
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .nume {
-  margin-top: 20px;
   font-size: 25px;
-  font-family: 'verdana';
-  text-align: center;
-    
-
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 30px 0px 10px 0px;
 }
-
 .descriere {
-  float: left;
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
-  font-size: 15px;
-  font-family: 'verdana';
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: justify;
-  
-  
 
 }
-  
 .pretcart {
-  display: inline-block;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  margin-right: 30px;
+  display: flex;
+  margin-top: 15px;
 }
-
 .pret {
-  float: left;
-  font-size: 35px;
-  font-family: 'verdana';
-  margin-right: 20px;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: auto;
+}
+svg {
+  margin-left: 20px;
   
 }
-
-.cart{
+.euro {
+  font-size: 30px;
+  margin-left: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   
-  float: right;
-  fill: rgb(95, 95, 95);
-  margin-right: 5px;
-    
 }
-
-.cart:hover {
+svg {
+  fill: rgb(95, 95, 95)
+}
+svg:hover {
   transition: all 0.2s ease; 
   fill: rgb(37, 168, 5);
 }
 
-.cart:active {     
+svg:active {     
   fill: rgb(40, 107, 23);
 }
 
