@@ -7,7 +7,7 @@
 
 .logo-container {
    display: block;
-   margin-left: 30px;
+   
 }
 
 .button-container {
@@ -114,7 +114,6 @@ a.btn,.btn {
   margin: 0 5px;
 }
 
-
 .detalii {
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
@@ -123,9 +122,6 @@ a.btn,.btn {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  
-  
-  
  
 }
 .imagine {
@@ -189,8 +185,7 @@ svg:active {
     width:100%
   }
   .container {
-    width: 100%;
-    
+    width: 100%; 
   }
   
   }
@@ -204,12 +199,9 @@ svg:active {
     }
     .logo-container {
       width:100%;
-      
     }
     .container {
       width: 100%;
-      
     }
-    
-    
+
     }
