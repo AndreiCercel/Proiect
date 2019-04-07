@@ -183,10 +183,13 @@ svg:active {
   .logo-container {
     width:100%
   }
-  
-  .container {
-    width:100%;
+  .detalii {
+    width: 100%;
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   }
+  
   
   }
   @media only screen and (max-width: 320px) {
@@ -201,9 +204,12 @@ svg:active {
       width:100%;
       display: block;
     }
-    .container {
-    width:100%;
-  }
+    .detalii {
+      width: 100%;
+      display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+    }
     
     
     }
