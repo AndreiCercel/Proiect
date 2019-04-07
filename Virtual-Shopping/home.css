@@ -7,7 +7,7 @@
 
 .logo-container {
     display: block;
-    margin-left: 10px;
+    
 }
 
 .button-container {
@@ -166,8 +166,14 @@ span {
 }*/
 @media only screen and (max-width: 768px) {
 .header {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   width: 100%
+}
+.logo-container {
+  width:100%
 }
 .container {
   width: 100%;
@@ -176,8 +182,14 @@ span {
 }
 @media only screen and (max-width: 320px) {
   .header {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     width: 100%
+  }
+  .logo-container {
+    width:100%
   }
   .container {
     width: 100%;
