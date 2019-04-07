@@ -21,7 +21,7 @@ function draw(){
                 ${lista.produse[i].nume}
             </div>
             <div id="pret">
-                ${lista.produse[i].pret}€
+                ${lista.produse[i].pret}<span>€</span>
             </div>
             
             <div id="detalii">

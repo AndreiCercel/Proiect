@@ -127,6 +127,9 @@ a.btn,.btn {
 #pret {
   
 }
+span {
+  margin-left: 5px;
+}
 #detalii{
   display: inline-block;
   font-size: 13px;
