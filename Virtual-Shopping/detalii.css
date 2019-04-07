@@ -124,7 +124,10 @@ a.btn,.btn {
   background-color: black;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  
+}
+.detaliu {
+  width: 50%;
 }
 
 .nume {
