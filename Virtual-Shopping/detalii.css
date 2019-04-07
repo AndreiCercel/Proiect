@@ -1,6 +1,4 @@
-body {
-  width: 100%;
-}
+
 
 .header {
  display: flex;
@@ -199,11 +197,12 @@ svg:active {
       width: 100%
     }
     .logo-container {
-      width:100%
+      width:100%;
+      display: block;
     }
     .container {
-      width:100%;
-    }
+    width:100%;
+  }
     
     
     }
