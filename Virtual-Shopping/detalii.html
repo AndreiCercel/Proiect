@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Detalii Chitară</title>
     <link rel="short icon" type="image/ico" href="images/favicon.ico" >
     <link rel="stylesheet" type="text/css" href="detalii.css">
@@ -39,16 +40,16 @@
         <div class="logo-container">
             <div class="logo">
                 <a href="index.html">
-                    <img src="images/guitarshop-logo.svg" alt="GuitarShop" width="320px">
+                    <img src="images/guitarshop-logo.svg" alt="GuitarShop" width="305px">
                 </a>
             </div>
         </div>
         <div class="button-container">
             <div class="buttons">
-                    <a class="btn btn-medium btn-gray  btn-radius" href="#">admin</a>
+                    <a class="btn btn-medium btn-gray  btn-radius" href="admin.html">admin</a>
             </div>
             <div class="buttons2">
-                <a class="btn btn-medium btn-green  btn-radius" href="#">Coș cumpărături</a>
+                <a class="btn btn-medium btn-green  btn-radius" href="cart.html">Coș cumpărături</a>
             </div>
         </div>
     </div>
@@ -67,8 +68,11 @@
                     <div class="descriere">
                             
                     </div>
-                
+                    
                     <div class="pretcart">
+                            <div class="back">
+                                    <a href="index.html"> < Back</a>
+                                </div>
                         <div class="pret">
                             
                         </div>
@@ -76,7 +80,7 @@
                             €
                         </div>
                         
-                        
+                        <a id="cos" href="cart.html">
                                 <svg viewBox="0 0 25 25" width="50px" height="50px">
                                 <path  d="M17.6,4.6c0.2-0.5,0.6-0.9,1.2-0.9c0.2,0,0.4,0,0.6,0.1c0.6,0.3,0.8,0.9,0.7,1.5l-2.5,8.1
                                 c-0.2,0.5-0.6,0.9-1.2,0.9H6.9c-0.5,0-1-0.4-1.2-0.9l-3.5-11h-1C0.6,2.5,0,1.9,0,1.2S0.6,0,1.2,0h1.9c0.5,0,1,0.4,1.2,0.9l3.5,11
@@ -85,17 +89,12 @@
                                 c0.4-0.4,0.4-1.1-0.1-1.4c-0.2-0.2-0.4-0.3-0.7-0.3h-1.8V1.2c0-0.7-0.6-1.2-1.2-1.2c-0.7,0-1.2,0.6-1.2,1.2v3.1H8.5
                                 c-0.6,0-1,0.5-1,1c0,0.3,0.1,0.5,0.3,0.7L10.6,9.3z"/>
                                 </svg>
-                    
+                        </a>
                     </div>
                 
             </div>  
     </div>
-    <script type="text/javascript">
-        window.addEventListener("load", function(){
-            const loader = document.querySelector(".loader");
-            loader.className += " hidden";
-        });
-    </script>
+   
     
 </body>
 
