@@ -1,0 +1,100 @@
+body {
+	color: black;
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 24px;
+}
+main {
+	background: url(https://www.retailgazette.co.uk/wp/wp-content/uploads/Twitter_Shopping-List_Husband-Proof_RG-Loves.jpg) no-repeat fixed;
+	min-height: 700px;
+	position: relative;
+	padding: 10px 0;
+}
+#whiteBackground {
+	width: fit-content;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+	margin: auto;
+}
+h4 {
+	padding-top: 30px;
+	margin-top: 50px;
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 20px;
+	color: white;
+}
+form {
+	display: block;
+	padding: 0 50px;
+	text-align: left;
+}
+form > button {
+	background-color: rgba(194, 194, 194);
+	color: black;
+	padding: 10px 20px;
+}
+form > input {
+	border-radius: 5px;
+	border: none;
+	padding: 5px;
+	font-size: 20px;
+	outline: none;
+	background-color: rgb(226, 226, 226)
+}
+#produsError {
+	display: block;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+}
+#buttons {
+	display: block;
+	padding: 0 50px;
+	text-align: left;
+}
+button {
+	background-color: rgba(13, 116, 148, 0.8);
+	color: rgb(255, 255, 255);
+	border: 0px;
+	padding: 5px;
+	margin: 10px 0 20px 0;
+	font-size: 13px;
+	outline: none;
+}
+button:active {
+	background-color: rgba(48, 48, 48, 0.8);
+	color: azure;
+}
+table {
+	padding: 0 50px 20px 50px;
+	display: none;
+}
+.tab {
+	display: none;
+	text-align: center;
+	font-size: 15px;
+	color: white;
+}
+tr {
+	display: block;
+}
+form, table, input, button {
+	border-radius: 5px;
+}
+th, td {
+	text-align: left;
+	padding-right: 30px;
+}
+#buyButton {
+	align-items: center;
+	background-color: rgb(36, 172, 36);
+	font-size: 13px;
+	margin: 0;
+	padding: 5px;
+}
+#buyButton:active {
+	background-color: rgb(28, 133, 28);
+	font-size: 13px;
+	margin: 0;
+	padding: 5px;
+}

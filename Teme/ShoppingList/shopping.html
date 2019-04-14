@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Listă de cumpărături</title>
+		<link rel="stylesheet" type="text/css" href="shopping.css">
+	</head>
+	<body>
+		<main>
+			<div id="whiteBackground" align="center">
+				<h4>Shopping List</h4>
+				<form autocomplete="off">
+					<input type="text" name="description">
+					<button onclick="addItem(event);">Add</button>
+					<span id="produsError"></span>
+				</form>
+				<div id="buttons">
+					<button onclick="sortAsc();">Sort asc</button>
+					<button onclick="sortDesc();">Sort desc</button>
+				</div>
+				<table class="tab">
+					<thead>
+						<tr>
+							<td>Product</td>
+							<td>Action</td>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+		</main>
+		<script type="text/javascript" charset="utf-8" src="shopping.js"></script>
+	</body>
+</html>
