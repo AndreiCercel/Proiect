@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Agendă telefonică</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body onload="hideTab();">
+		<main>
+			<h2>Agendă Telefonică</h2>
+			<form autocomplete="off">
+				<label>
+					<span>Nume: </span>
+					<input type="text" name="nume" onkeyup="verifyName(this, event);">
+				</label>
+				<label>
+					<span>Telefon: </span>
+					<input type="number" name="telefon" onkeyup="verifyPhone(this, event);">
+				</label><br>
+				<span id="errorN"></span>
+				<span id="errorT"></span>
+				<button onclick="addContact(event);">ADAUGĂ CONTACT</button>
+			</form>
+			<table style="align:center">
+				<thead>
+					<tr>
+						<th>Nume</th>
+						<th>Telefon</th>
+						<th></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</main>
+		<script type="application/javascript" charset="utf-8" src="agenda.js"></script>
+	</body>
+</html>
