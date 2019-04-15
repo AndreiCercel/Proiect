@@ -318,6 +318,15 @@ svg:hover {
 svg:active {     
   fill: rgb(40, 107, 23);
 }
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8b8b8b;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+  font-weight: 100;
+}
 @media only screen and (max-width: 768px) {
   .header {
     display: flex;
