@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="catalog.css">
+    <title>Catalog</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="lista-elevi">
+            <h1>Lista elevi</h1>
+            <div class="form-input">
+                <label for="elev">Nume Elev:</label>
+                <input type="text" placeholder="Nume" name="elev" onkeypress="insertText(this,event)">
+                <button onclick="adaugaElev()">Adauga Elev</button>
+            </div>
+            <div class="tabelElevi">
+                <span onclick="sortAscMedie()">Up</span>
+
+                <span onclick="sortDescMedie()">Down</span>
+                <table class="tbl">
+                    <thead class="thd">
+                        <tr>
+                            <th>
+                                Niciun elev adaugat
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="tbod">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+        <div class="lista-note">
+
+            <button onclick="hideNote()">Ascunde note elev</button>
+
+            <h1 id="numeElev">Note Elev: </h1>
+
+            <div class="form-note">
+
+            </div>
+
+            <div class="tabelNote">
+
+                <div class="sortareDivNote">
+                    <span>Up</span>
+
+                    <span>Down</span>
+                </div>
+
+                <table class="tblNote">
+
+                    <thead class="thdNote">
+                        <tr>
+                            <th>
+                                Nota:
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="tbodNote">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="catalog.js"></script>
+</body>
+
+</html>

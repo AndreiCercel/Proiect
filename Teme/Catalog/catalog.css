@@ -1,0 +1,95 @@
+body{
+    margin:0;
+    padding:0;
+}
+.lista-elevi{
+    display: inline-block;
+    height:100vh;
+    font-family: 'Roboto', sans-serif;
+    width:100%;
+}
+h1{
+    margin-left: 10px;
+}
+.lista-elevi h1{
+    font-weight: 300;
+    width:200px;
+}
+.form-input{
+    margin-top:20px;
+    margin-left: 10px;
+}
+/* titlu note */
+input {
+    outline: none;
+    border-radius: 5px;
+    border:none;
+    background-color: #dfdfdf;
+    height: 20px;
+    margin: 10px;
+}
+#numeElev{
+    font-weight: 300;
+    margin-left: 10px;
+}
+/* lista note */
+.lista-note{
+    font-family: 'Roboto', sans-serif;
+    width:50%;
+    background-color:rgb(248, 248, 248);
+    float:right;
+    height:100vh;
+    display:none;
+}
+/* tabel */
+.tbl{
+    width:100%;
+}
+.tblNote{
+    margin:auto;
+}
+/* butoanele de sortare */
+.tabelElevi span{
+    background-color: #4286f4;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    margin: 5px;
+    cursor: pointer;
+    color: white;
+}
+.tabelElevi {
+    margin-left: 10px;
+    width: 417px;
+}
+.sortareDivNote span{
+    background-color: #4286f4;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+}
+button {
+    background-color: rgb(184, 184, 184);
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    outline: none;
+}
+button:hover {
+    background-color: rgb(148, 148, 148);
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+button:active {
+    background-color: rgb(90, 90, 90);
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    color: white;
+}
