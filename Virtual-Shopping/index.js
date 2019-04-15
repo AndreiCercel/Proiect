@@ -1,18 +1,43 @@
-var lista=[];
-function get(){
+var lista = [];
+
+function get() {
     fetch('https://andreicercel.firebaseio.com/.json')
-      .then(response => response.json())
-      .then(data => {
-        lista=data;
+        .then(response => response.json())
+        .then(data => {
+            lista = data;
             draw();
-      })
+        })
 }
 
-function draw(){
+function addToCart(i) {
+
+    if (typeof(Storage) !== "undefined") {
+        var el = {};
+        el.nume = lista.produse[i].nume;
+        el.imagine = lista.produse[i].imagine;
+        el.cantitate = 1;
+        el.pret = parseInt(lista.produse[i].pret);
+
+        localStorage.setItem(i, JSON.stringify(el));
+        alert("Produsul a fost adaugat in coș");
+        document.getElementById("nr").classList.remove("hidden");
+        x++;
+        document.getElementById("nr").innerText = x;
+
+
+    } else {
+        alert("eroare");
+    }
+}
+
+
+function draw() {
     var str = "";
-    for(let i in lista.produse){
-        if (lista.produse[i] === null){continue;}
-        str+=`
+    for (let i in lista.produse) {
+        if (lista.produse[i] === null) {
+            continue;
+        }
+        str += `
         <div class="produs">
             <div id="imagine">
                 <img src="${lista.produse[i].imagine}" alt="Guitar" height="175px">
@@ -28,7 +53,7 @@ function draw(){
                 <a class="btn btn-medium-detalii btn-detalii  btn-radius" href="detalii.html?produs=${i}" >detalii</a>
             </div>
             
-            <div id="cart">
+            <div id="cart" onclick="addToCart('${i}')">
                     <svg viewBox="0 0 25 25" >
                     <path  d="M17.6,4.6c0.2-0.5,0.6-0.9,1.2-0.9c0.2,0,0.4,0,0.6,0.1c0.6,0.3,0.8,0.9,0.7,1.5l-2.5,8.1
                     c-0.2,0.5-0.6,0.9-1.2,0.9H6.9c-0.5,0-1-0.4-1.2-0.9l-3.5-11h-1C0.6,2.5,0,1.9,0,1.2S0.6,0,1.2,0h1.9c0.5,0,1,0.4,1.2,0.9l3.5,11
@@ -41,5 +66,6 @@ function draw(){
         </div>
         `
     }
-    document.querySelector(".container").innerHTML=str;
+    document.querySelector(".container").innerHTML = str;
+
 }

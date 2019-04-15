@@ -1,4 +1,4 @@
-/*loader*/
+
 .loader {
    
   position: fixed;
@@ -6,10 +6,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  
- }
-
- .loader.hidden {
+  }
+.loader.hidden {
    animation: fadeOut 0.5s;
    animation-fill-mode: forwards;
  }
@@ -19,9 +17,6 @@
     visibility: hidden;
   }
 }
-
-
-
 .s2 {
  position: absolute;
  height: 100px;
@@ -31,7 +26,6 @@
  left: 50%;
  transform: translate(-50%, -50%);
 }
-
 .s1 {
  position: absolute;
  height: 100px;
@@ -42,7 +36,6 @@
  transform: translate(-50%, -50%) rotate(45deg);
  background-color: transparent;
 }
-
 .bigcon {
  position: absolute;
  height: 95px;
@@ -55,12 +48,10 @@
  animation: bigcon 2s infinite linear;
  animation-delay: 0.25s;
 }
-
 .b {
  border-radius: 50%;
  position: absolute;
 }
-
 .s {
  width: 25px;
  height: 25px;
@@ -68,37 +59,30 @@
  box-shadow: 0px 2px rgba(0,0,0,0.3);
   background-color: #8b8b8b;
 }
-
 .s:nth-child(1) {
  top: 0%;
  left: 0%;
 }
-
 .s:nth-child(2) {
  top: 0%;
  right: 0%;
 }
-
 .s:nth-child(3) {
  right: 0%;
  bottom: 0%;
 }
-
 .s:nth-child(4) {
  bottom: 0%;
  left: 0%;
 }
-
 .big {
  width: 10px;
  height: 10px;
  border-radius: 50px;
- 
  z-index: 1;
  background-color: #585858;
  animation: bigball 1s infinite linear;
 }
-
 .sb1{
  animation-delay: -1.75s;
 }
@@ -123,7 +107,6 @@
 .sb5{
  animation-delay: -0s;
 }
-
 @keyframes bigcon {
  0% {
    transform-origin: center;
@@ -134,7 +117,6 @@
    transform: translate(-50%, -50%) rotate(405deg);
  }
 }
-
 @keyframes small {
  0% {
    transform: scale(1);
@@ -156,27 +138,20 @@ transform: scale(1);
     background-color: #a8a8a8;
  }
 }
-
-/*  page */
-
 .header {
  display: flex;
  justify-content: space-between;
 }
 
 .logo-container {
-   display: block;
-   
-   
+   display: block;  
 }
-
 .button-container {
   display: flex;
   flex-direction: row-reverse;
   margin: 10px;
   align-items: center;
 }
-
 a.btn,.btn, .adauga {
   
   display: inline-block;
@@ -186,11 +161,9 @@ a.btn,.btn, .adauga {
   font-family: 'verdana';
   outline:none;
 }
-
 .btn-radius, .adauga {
   border-radius: 5px;
 }
-
 .btn-medium, .adauga {
     font-size: 0.7375em;
     padding: 0.375em 1.375em;
@@ -199,7 +172,6 @@ a.btn,.btn, .adauga {
     font-size: 0.9375em;
     padding: 0.375em 1.300em;
 }
-
 .btn-green {
     color: rgb(37, 168, 5);
     border-color: rgb(37, 168, 5);
@@ -210,39 +182,32 @@ a.btn,.btn, .adauga {
   color: rgb(255, 255, 255);
   border-color: rgb(37, 168, 5);        
 }
-
 .btn-green:active {     
   background: rgb(40, 107, 23);
   border-color: rgb(40, 107, 23);        
 }
-
 .btn-gray {
     color: rgb(206, 206, 206);
     border-color: rgb(206, 206, 206);
 }
-
 .btn-gray:hover {
   background: rgb(139, 139, 139);
   color: rgb(255, 255, 255);
   border-color: rgb(139, 139, 139);        
 }
-
 .btn-gray:active {     
   background: rgb(90, 90, 90);
   border-color: rgb(90, 90, 90);
 }
-
 .btn-editare {
   color: rgb(255, 255, 255);
   background-color: rgb(49, 114, 253);
   margin-right: 10px;
 }
-
 .btn-editare:hover {
   background-color: rgb(10, 77, 221);
   color: rgb(255, 255, 255);    
 }
-
 .btn-editare:active {     
   background: rgb(8, 47, 131);
 }
@@ -250,16 +215,13 @@ a.btn,.btn, .adauga {
   color: rgb(255, 255, 255);
   background-color: rgb(253, 49, 49)
 }
-
 .btn-stergere:hover {
   background-color: rgb(218, 12, 12);
   color: rgb(255, 255, 255);    
 }
-
 .btn-stergere:active {     
   background: rgb(138, 8, 8);
 }
-
 
 .buttons, .buttons2, .adauga {
   margin: 0 5px;
@@ -274,7 +236,6 @@ a.btn,.btn, .adauga {
   background-color:  rgb(139, 139, 139);;
   border: none; 
 }
-
 .adauga:hover {
   background-color:  rgb(105, 105, 105);;
   color: rgb(255, 255, 255);    
@@ -289,10 +250,8 @@ a.btn,.btn, .adauga {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  
+  flex-wrap: wrap;  
 }
-
 .produse {
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
@@ -302,38 +261,27 @@ a.btn,.btn, .adauga {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 60%;
-  
- 
+  width: 70%;
 }
 .imagine {
   display: flex;
   align-items: center;
-  
   padding: 
 }
-
-
 .nume {
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   max-width: 50%;
   margin-left: 10px;
-  margin-right: 10px;
-  
-  
+  margin-right: 10px;  
 }
-
-
 .options {
   display: flex;
   justify-items: right;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
- 
-}
 }
 .pretcart {
   display: flex;
@@ -343,7 +291,6 @@ a.btn,.btn, .adauga {
   font-size: 25px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-right: 10px;
-
 }
 .stock {
   font-size: 15px;
@@ -360,7 +307,6 @@ svg {
   font-size: 30px;
   margin-left: 5px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
 }
 svg {
   fill: rgb(95, 95, 95)
@@ -369,11 +315,9 @@ svg:hover {
   transition: all 0.2s ease; 
   fill: rgb(37, 168, 5);
 }
-
 svg:active {     
   fill: rgb(40, 107, 23);
 }
-
 @media only screen and (max-width: 768px) {
   .header {
     display: flex;
@@ -391,25 +335,23 @@ svg:active {
   .options {
     width: 100%;
   }
-  
   }
-  @media only screen and (max-width: 320px) {
-    .header {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      width: 100%
-    }
-    .logo-container {
-      width:106%;
-      
-    }
-    
-    .container {
-      width: 100%;
-    }
-    .options {
-      width: 100%;
-    }
-    }
+@media only screen and (max-width: 320px) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%
+  }
+  .logo-container {
+    width:106%;
+  }
+  
+  .container {
+    width: 100%;
+  }
+  .options {
+    width: 100%;
+}
+}
