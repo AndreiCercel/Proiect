@@ -15,7 +15,7 @@ function desenareElevi() {
     var bodTbl = document.querySelector('.tbod');
 
     var htmlBod = "";
-    var htmlHead = "<tr><td>Nume:</td><td>Media:</td><td>Actiune:</td></tr>";
+    var htmlHead = "<tr><td>Nume:</td><td>Media:</td><td>Note:</td></tr>";
 
     for (let i = 0; i < listaElevi.length; i++) {
 
